@@ -6,7 +6,9 @@ Een moderne, volledig responsive website voor het STAM Stadsmuseum Gent, ontwikk
 
 ## 🔗 Live Demo
 
-**GitHub Pages:** [https://omerasik.github.io/stam_museum_gent](https://omerasik.github.io/stam_museum_gent)
+**GitHub Pages:** [https://omerasik.github.io/stam_museum_gent/](https://omerasik.github.io/stam_museum_gent/)
+
+**GitHub Repository:** [https://github.com/omerasik/stam_museum_gent](https://github.com/omerasik/stam_museum_gent)
 
 ---
 
