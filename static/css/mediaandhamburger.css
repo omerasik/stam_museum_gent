@@ -1,0 +1,404 @@
+/* Tablet breakpoint */
+@media (max-width: 1024px) {
+    .main-nav {
+        padding: 16px 20px;
+    }
+
+    .nav-list {
+        gap: 32px;
+    }
+
+    .nav-item a {
+        font-size: 20px;
+    }
+
+    .nav-actions {
+        margin-right: 5rem;
+    }
+
+    .uitgelicht-cards {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .section-uitgelicht article {
+        padding: 2rem;
+    }
+
+    .footer-top {
+        width: 100%;
+        padding: 2rem;
+    }
+}
+
+/* Mobile breakpoint */
+@media (max-width: 768px) {
+    
+    .main-nav, .main-nav-visit {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 16px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .nav-actions {
+        margin-right: 0;
+        margin-top: 16px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .logo-container {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 16px;
+    }
+
+    .erfgoed {
+        padding-left: 0;
+        margin-top: 8px;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    
+    .hero-text {
+        bottom: 10px;
+        left: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-text img,
+    .hero-text svg {
+        height: 60px;
+        width: auto;
+    }
+
+    .arrow-down {
+        right: 0.5rem;
+        height: 4rem;
+    }
+
+   
+    .section-agenda h2 {
+        width: 100%;
+        padding: 40px 20px;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .agenda {
+        flex-direction: column;
+    }
+
+    .gate, .story-ghent {
+        width: 100%;
+    }
+
+    .text-ghent, .text-gate {
+        padding: 1.5rem;
+    }
+
+    .text-ghent h3a, .text-gate h3 {
+        font-size: 24px;
+    }
+
+    .overlay-image--agenda {
+        width: 8rem;
+        bottom: 1rem;
+        left: 1rem;
+    }
+
+    
+    .uitgelicht h2, .section-uitgelicht h2 {
+        margin-left: 0;
+        text-align: center;
+        font-size: 32px;
+        padding: 0 20px;
+    }
+
+    .section-uitgelicht {
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .uitgelicht-border {
+        border-right: none;
+        border-bottom: solid 1px;
+    }
+
+    .uitgelicht-cards {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+
+    .uitgelicht-cards article {
+        padding: 1rem 0;
+    }
+
+    .uitgelicht-cards h3 {
+        margin: 1rem 0;
+        font-size: 1.5rem;
+    }
+
+    .uitgelicht-cards p {
+        margin: 1rem 0;
+    }
+
+    .fly {
+        position: static;
+        height: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    
+    .footer-top {
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem 1rem;
+        align-items: flex-start;
+    }
+
+    .stam-logo-footer {
+        width: 150px;
+        margin-bottom: 1rem;
+    }
+
+    .contact-info, .footer-top-grid-two {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .contact-info h2,
+    .footer-top-grid-two h2 {
+        font-size: 24px;
+    }
+
+    .contact-info li {
+        font-size: 16px;
+    }
+
+    .footer-top-grid-two button {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 16px;
+    }
+
+    .list-socials {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        padding: 1.5rem 1rem;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    .footer-bottom p {
+        font-size: 14px;
+    }
+
+    .footer-bottom ul {
+        flex-direction: column;
+        gap: 8px;
+        padding: 0;
+    }
+
+    .footer-bottom ul li a {
+        font-size: 14px;
+    }
+
+    .mobile-bottom-footer {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .mobile-bottom-footer img {
+        height: 2.5rem;
+    }
+
+    
+    .made-by {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    /* About page responsive */
+    .about-wat-is-stam h1 {
+        font-size: 36px;
+    }
+
+    .about-missie h3,
+    .about-voor-wie h3 {
+        font-size: 24px;
+    }
+
+    .about-kwaliteitslabel h2,
+    .about-kwaliteitslabel h3 {
+        font-size: 32px;
+    }
+
+    /* Visit page responsive */
+    .info h1 {
+        font-size: 36px;
+    }
+
+    .column {
+        min-width: 100%;
+    }
+
+    .column h2 {
+        font-size: 32px;
+    }
+
+    /* History page responsive */
+    .navsection {
+        padding: 1rem;
+    }
+
+    .side-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .side-nav li {
+        list-style: none;
+    }
+
+    .side-nav a {
+        display: block;
+        padding: 0.5rem 1rem;
+        background: var(--brand-green);
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    .historiek h1 {
+        font-size: 36px;
+        padding: 0 1rem;
+    }
+
+    .historiek p {
+        padding: 0 1rem;
+    }
+
+    .historiek-section h2 {
+        font-size: 28px;
+        padding: 0 1rem;
+    }
+
+    .historiek-section p {
+        padding: 0 1rem;
+    }
+
+    .meest-bekeken {
+        padding: 1rem;
+    }
+
+    .meest-bekeken h3 {
+        font-size: 24px;
+    }
+
+    .items-gallery {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+/* Small mobile breakpoint */
+@media (max-width: 480px) {
+    .nav-item a {
+        font-size: 18px;
+    }
+
+    .tickets-button,
+    .language-button {
+        font-size: 16px;
+        padding: 0 16px;
+    }
+
+    .hero-text svg {
+        height: 40px;
+    }
+
+    .section-agenda h2,
+    .uitgelicht h2 {
+        font-size: 24px;
+    }
+
+    .text-ghent h3a,
+    .text-gate h3 {
+        font-size: 20px;
+    }
+
+    .about-wat-is-stam h1,
+    .info h1,
+    .historiek h1 {
+        font-size: 28px;
+    }
+
+    .column h2,
+    .about-kwaliteitslabel h2 {
+        font-size: 24px;
+    }
+}
+
+
+.hamburger-menu{
+display: none;
+flex-grow: 1;
+align-items: center;
+padding: 1rem 1rem 1rem 0rem;
+height: 100%;
+}
+  
+  @media (max-width: 69rem) {
+    .hamburger-menu {
+      display: flex;
+    }
+  }
+  @media (max-width: 48rem) {
+    .hamburger-menu {
+      flex-grow: 0;
+    }
+  }
+
+  
+
+.nav-list.open {
+    display: flex;
+}
+
+
+.nav-list li {
+    margin: 15px 0;
+    list-style: none;
+    text-align: left;
+}
+
+.nav-list a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+

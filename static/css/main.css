@@ -1,0 +1,947 @@
+:root {
+--default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+"Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+"Source Han Sans CN", sans-serif;
+--brand-green: hsl(158, 100%, 27%);
+--brand-red: hsl(19, 100%, 50%);
+--brand-yellow: hsl(59, 69%, 67%);
+--neutrals-white: hsl(0, 0%, 100%);
+--neutrals-black: hsl(0, 0%, 16%);
+}
+body.index {
+--header-backgroundcolor: hsl(158, 100%, 27%);
+}
+
+body.visit {
+--header-backgroundcolor: hsl(23, 87%, 81%);
+}
+
+body.about {
+--header-backgroundcolor: hsl(158, 100%, 27%);
+}
+
+
+body {
+font-family: var(--default-font-family);
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+overflow-x: hidden;
+}
+
+*, *::before, *::after {
+box-sizing: border-box;
+}
+
+img {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+.main-nav {
+font-family: "Albert Sans", sans-serif;
+display: flex;
+width: 100%;
+height: 94px;
+align-items: center;
+justify-content: space-between;
+background-color: hsl(158, 100%, 27%);
+padding: 0 24px;
+position: relative;
+}
+
+.nav-list {
+display: flex;
+align-items: center;
+gap: 64px;
+}
+
+.nav-item {
+display: flex;
+align-items: center;
+gap: 6px;
+}
+
+.nav-item a {
+color: hsl(0, 0%, 100%);
+font-family: "Albert Sans";
+font-size: 24px;
+font-weight: 500;
+line-height: 30px;
+text-decoration: none;
+}
+
+
+.icon-container {
+display: flex;
+align-items: center;
+padding-top: 3px;
+}
+
+.nav-actions {
+display: flex;
+align-items: center;
+height: 100%;
+margin-right: 10rem;
+}
+
+.tickets-button {
+display: flex;
+padding: 0px 24px;
+justify-content: center;
+align-items: center;
+align-self: stretch;
+background: hsl(0, 0%, 16%);
+color: hsl(0, 0%, 100%);
+font-family: Roboto;
+font-size: 24px;
+}
+
+.language-button {
+display: flex;
+padding: 0px 24px;
+justify-content: center;
+align-items: center;
+align-self: stretch;
+background: hsl(0, 0%, 33%);
+color: hsl(0, 0%, 100%);
+font-family: Roboto;
+font-size: 24px;
+}
+
+.logo-container {
+position: absolute;
+right: 0;
+top: 0;
+z-index: 2;
+align-items: flex-end;
+}
+
+.erfgoed {
+padding-left: 5.9rem;
+}
+
+
+
+/* Hero */
+.hero {
+position: relative;
+width: 100%;
+}
+
+.hero-image {
+width: 100%;
+height: auto;
+object-fit: cover;
+}
+
+.hero-text {
+position: absolute;
+bottom: 20px;
+left: 20px;
+display: flex;
+gap: 10px;
+align-items: center;
+}
+
+.arrow-down {
+position: absolute;
+right: 1rem;
+top: 80%;
+height: 6rem;
+}
+
+
+
+
+.hero-text img {
+height: 100px;
+}
+
+
+
+
+/*AGENDA*/
+
+.section-agenda h2{ 
+display: flex;
+width: 100%;
+max-width: 1512px;
+padding: 80px 120px;
+align-items: center;
+gap: 10px;
+}
+
+
+.section-agenda h2{ 
+color:hsl(0, 0%, 16%);
+font-family: "Albert Sans";
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; 
+
+}
+
+.agenda {
+display: flex;
+}
+
+.agenda h2 {
+font-family: "Albert Sans";
+padding-top: 2rem;
+padding-bottom: 2rem;
+padding-left: 3rem;
+
+}
+
+
+.gate {
+width: 50%;
+background-color: hsl(158, 100%, 27%);
+position: relative;
+}
+
+.story-ghent {
+width: 50%;
+background-color: hsl(19, 100%, 50%);
+}
+
+.text-ghent {
+padding: 2rem 5rem 3rem 10rem;
+}
+
+.text-gate {
+padding: 2rem 10rem 3rem 5rem;
+}
+
+.text-gate h3{
+color: hsl(0, 0%, 100%);
+font-family: "Albert Sans";
+font-size: 33px;
+font-style: normal;
+font-weight: 500;
+line-height: 124%;
+}
+
+.overlay-image {
+position: absolute;
+}
+
+.overlay-image--agenda {
+bottom: 1.5rem;
+left: 1.5rem;
+}
+@media (max-width: 460px) {
+.overlay-image--agenda {
+width: 12.5rem;
+}
+}
+
+.overlay-container{
+position: relative;
+width: 100%;
+
+}
+
+
+
+.story-ghent img {
+width: 100%;
+}
+
+.gate-img {
+width: 100%;
+}
+
+.section-agenda h3 {
+
+color: hsl(0, 0%, 100%);
+
+}
+
+.text-ghent .date {
+color: hsl(0, 0%, 16%);
+margin-top: 1rem;
+}
+
+.text-ghent h3a {
+color: hsl(0, 0%, 100%);
+font-family: "Albert Sans";
+font-size: 33px;
+font-style: normal;
+font-weight: 500;
+line-height: 124%; 
+}
+
+.date {
+color:hsl(0, 0%, 16%);
+font-family: "Albert Sans";
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; 
+letter-spacing: 1.2px;
+}
+.date p {
+color: hsl(0, 0%, 100%);
+font-family: Roboto;
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; 
+
+
+}
+
+.gate .date p {
+margin-top: 1rem;
+color: hsl(0, 0%, 16%);
+}
+
+.date div {
+display: flex;
+margin-top: 1rem;
+}
+
+.date img {
+margin-right: 1rem;
+}
+
+.section-agenda p {
+color: hsl(0, 0%, 100%);
+margin-top: 1rem;
+
+}
+
+/*uitgelicht*/
+.uitgelicht h2 {
+margin-left: 15%;
+color: hsl(0, 0%, 16%);
+font-family: "Albert Sans";
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; 
+}
+
+.section-uitgelicht h2 { 
+color: hsl(0, 0%, 16%);
+font-family: "Albert Sans";
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; 
+}
+.uitgelicht h3 {
+color:hsl(0, 0%, 16%);
+font-family: "Albert Sans";
+font-size: 33px;
+font-style: normal;
+font-weight: 500;
+line-height: 124%; 
+}
+.uitgelicht p {
+color: hsl(0, 0%, 16%);
+
+
+font-family: Roboto;
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; 
+}
+
+
+
+.section-uitgelicht {
+display: flex;
+margin: 1rem auto 2rem auto;
+max-width: 1400px;
+width: 100%;
+padding: 1rem;
+justify-content: center;
+}
+
+.section-uitgelicht article {
+display: flex;
+flex-direction: column;
+padding: 2rem 4rem 2rem 2rem;
+max-width: 670px;
+width: 100%;
+}
+
+.section-uitgelicht article div {
+display: flex;
+}
+
+.uitgelicht-border {
+border-right: solid 1px;
+}
+
+
+.section-uitgelicht article {
+background-color: hsl(59, 69%, 67%);
+padding: 2rem 4rem 2rem 2rem;
+}
+
+.section-uitgelicht p {
+margin-top: 2rem;
+}
+
+.uitgelicht-cards h3 {
+color: hsl(0, 0%, 16%);
+
+
+font-family: "Albert Sans";
+font-size: 33px;
+font-style: normal;
+font-weight: 500;
+line-height: 124%; 
+}
+
+.uitgelicht-cards {
+position: relative;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+max-width: 79.5rem;
+width: 100%;
+margin: 0 auto;
+padding-top: 5rem;
+}
+
+.uitgelicht-cards article {
+position: relative;
+border-top: solid 1px;
+}
+
+.uitgelicht-cards h3 {
+margin: 1rem 1.5rem;
+font-size: 2rem;
+}
+
+
+
+.uitgelicht-cards p {
+margin: 1rem 1.5rem;
+color: hsl(0, 0%, 0%);
+
+
+font-family: Roboto;
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; 
+}
+
+.uitgelicht-cards article img {
+width: 100%;
+}
+
+.uitgelicht-cards .card-bottom {
+border-bottom: solid 1px;
+}
+
+.uitgelicht-cards .card {
+border-left: solid 1px;
+border-right: solid 1px;
+}
+
+.fly {
+position: absolute;
+top: 4%;
+right: 38%;
+height: 2rem;
+z-index: 1;
+}
+
+
+.date-card {
+display: flex;
+color: hsl(158, 100%, 27%);
+}
+.date-card p {
+color: hsl(0, 0%, 0%);
+font-family: Roboto;
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; 
+}
+
+.date-card img {
+height: 2rem;
+
+
+}
+
+/* footer*/
+.footer-top {
+max-width: 80rem;
+width: 100%;
+margin: 0 auto;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+border-top: 2px solid hsl(0, 0%, 0%);
+margin-top: 1rem;
+padding: 1rem;
+}
+
+.contact-info h2 {
+color: hsl(0, 0%, 0%);
+
+
+font-family: "Albert Sans";
+font-size: 33px;
+font-style: normal;
+font-weight: 500;
+line-height: 124%;
+}
+
+.contact-info li {
+list-style: none;
+color: hsl(0, 0%, 0%);
+
+
+font-family: Roboto;
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; 
+}
+
+.contact-info li a {
+text-decoration: none;
+color: hsl(0, 0%, 0%);
+}
+
+.contact-info .list-image {
+display: flex;
+margin-top: 1rem;
+gap: 24px;
+}
+.footer-top-grid-two h2{
+
+color: #000;
+
+font-family: "Albert Sans";
+font-size: 33px;
+font-style: normal;
+font-weight: 500;
+line-height: 124%; 
+}
+
+.footer-top-grid-two {
+display: grid;
+}
+
+.footer-top-grid-two button {
+background-color: hsl(158, 100%, 27%);
+color: hsl(0, 0%, 100%);
+margin: 0.3rem 0 0.3rem 0;
+color:hsl(0, 0%, 100%);
+
+
+font-family: Roboto;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 100%; 
+
+
+}
+
+.list-socials {
+display: flex;
+list-style: none;
+justify-content: space-evenly;
+padding: 0;
+margin: 1.5rem 0 1.5rem 0;
+}
+
+.list-socials li {
+display: flex;
+justify-content: center;
+align-items: center;
+border: 2px solid hsl(0, 0%, 0%);
+border-radius: 50%;
+padding: 5px;
+height: 2rem;
+width: 2rem;
+}
+
+.footer-bottom {
+display: flex;
+background-color: hsl(60, 1%, 17%);
+color: hsl(0, 0%, 100%);
+justify-content: space-evenly;
+align-items: center;
+color: hsl(0, 0%, 100%);
+font-family: Roboto;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; 
+}
+
+.footer-bottom ul {
+display: flex;
+list-style: none;
+}
+
+.footer-bottom ul li a {
+text-decoration: none;
+padding: 0.3rem;
+}
+
+.footer-bottom a {
+color: hsl(0, 0%, 100%);
+}
+
+.mobile-bottom-footer{
+display: flex;
+gap: 2rem;
+
+
+}
+.mobile-bottom-footer img {
+height: 3rem;
+
+
+}
+
+
+.made-by {
+display: flex;
+}
+
+.made-by img {
+height: 1.5rem;
+margin-left: 0.3rem;
+
+}
+
+
+/* about css*/
+
+main {
+max-width: 1200px;
+width: 100%;
+margin: 0 auto;
+padding: 40px 20px;
+font-family: "Albert Sans", sans-serif;
+color: hsl(0, 0%, 16%);
+box-sizing: border-box;
+}
+
+
+.about-wat-is-stam h1 {
+font-family: "Albert Sans", sans-serif;
+font-size: 60px;
+font-weight: 400;
+margin-bottom: 20px;
+color: hsl(0, 0%, 16%);
+}
+
+.about-wat-is-stam p {
+font-size: 19px;
+line-height: 1.6;
+margin-bottom: 20px;
+}
+
+.about1,
+.about2,
+.about3 {
+width: 100%;
+height: auto;
+display: block;
+margin: 20px 0;
+}
+
+
+.about-missie h3 {
+font-family: "Albert Sans", sans-serif;
+font-size: 33px;
+margin-bottom: 20px;
+color: hsl(0, 0%, 16%);
+}
+
+.about-missie p {
+font-size: 19px;
+line-height: 1.6;
+margin-bottom: 20px;
+}
+
+
+.about-voor-wie h3 {
+font-family: "Albert Sans", sans-serif;
+font-size: 33px;
+margin-bottom: 20px;
+color: hsl(0, 0%, 16%);
+}
+
+.about-voor-wie p {
+font-size: 19px;
+line-height: 1.6;
+margin-bottom: 20px;
+}
+
+.about-voor-wie ul {
+list-style: disc;
+margin-left: 40px;
+margin-bottom: 20px;
+}
+
+.about-voor-wie li {
+margin-bottom: 10px;
+font-size: 19px;
+line-height: 1.6;
+}
+
+
+.about-kwaliteitslabel h2 {
+font-family: "Albert Sans";
+font-size: 48px;
+margin-bottom: 20px;
+color: #2A2A2A;
+}
+.about-kwaliteitslabel h3 {
+color: #000000;
+
+
+font-family: "Albert Sans";
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; 
+
+}
+
+.about-kwaliteitslabel p {
+font-size: 19px;
+line-height: 1.6;
+margin-bottom: 20px;
+}
+
+.expandable-section {
+border-bottom: 1px solid #ccc;
+padding: 10px 0;
+}
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.header h2 {
+margin: 0;
+font-size: 1.5rem;
+}
+
+.icon-button {
+background: none;
+border: none;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.icon {
+width: 24px;
+height: 24px;
+display: none; 
+}
+
+.icon-add {
+display: block; 
+}
+
+.expandable-section.open .icon-add {
+display: none; 
+}
+
+.expandable-section.open .icon-close {
+display: block; 
+}
+
+.expandable-section p {
+display: none;
+margin-top: 10px;
+}
+
+.expandable-section.open p {
+display: block; 
+}
+.footer h2 {
+color: #000;
+
+font-family: "Albert Sans";
+font-size: 33px;
+font-style: normal;
+font-weight: 500;
+line-height: 124%; 
+
+}
+
+
+/* visit css*/
+.main-nav-visit {
+display: flex;
+width: 100%;
+height: 94px;
+align-items: center;
+justify-content: space-between;
+background-color: hsl(23, 87%, 81%);
+padding: 0 24px;
+position: relative;
+}
+
+.nav-list {
+display: flex;
+align-items: center;
+gap: 64px;
+}
+
+.nav-item {
+display: flex;
+align-items: center;
+gap: 6px;
+}
+
+.nav-item a {
+color: hsl(0, 0%, 100%);
+font-family: "Albert Sans";
+font-size: 24px;
+font-weight: 500;
+line-height: 30px;
+text-decoration: none;
+}
+
+
+.icon-container {
+display: flex;
+align-items: center;
+padding-top: 3px;
+}
+
+.nav-actions {
+display: flex;
+align-items: center;
+height: 100%;
+margin-right: 10rem;
+}
+
+
+main {
+max-width: 1200px;
+margin: 0 auto;
+padding: 40px 20px;
+font-family: "Roboto", sans-serif;
+color: hsl(0, 0%, 16%);
+box-sizing: border-box;
+}
+
+
+.info h1 {
+font-family: "Albert Sans";
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; 
+margin-bottom: 20px;
+color: #2A2A2A;
+}
+
+
+.info-image {
+width: 100%;
+height: auto;
+margin-bottom: 24px;
+display: block;
+}
+
+.columns {
+display: flex;
+flex-wrap: wrap;
+gap: 24px;
+}
+
+.column {
+flex: 1;
+min-width: 300px;
+}
+
+
+.column h2 {
+color:hsl(0, 0%, 16%);
+
+
+font-family: "Albert Sans";
+font-size: 48px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%; 
+margin-bottom: 10px;
+
+}
+
+/* teksten */
+.column p {
+color:hsl(0, 0%, 16%);
+font-family: Roboto;
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; 
+margin-bottom: 15px;
+}
+
+
+.column ul {
+color:hsl(0, 0%, 16%);
+
+font-family: Roboto;
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; 
+text-decoration-line: underline;
+text-decoration-style: solid;
+text-decoration-skip-ink: auto;
+text-decoration-thickness: auto;
+text-underline-offset: auto;
+text-underline-position: from-font;
+}
+
+.column ul li {
+margin-bottom: 5px;
+}
+
+.column ul li a {
+text-decoration: none;
+color: hsl(0, 0%, 16%);
+font-size: 16px;
+}
+
+.column table {
+color: hsl(0, 0%, 16%);
+
+font-family: Roboto;
+font-size: 19px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%; 
+margin-bottom: 20px;
+}
+
+.column table td {
+border-bottom: 1px solid var(--Neutrals-black, hsl(0, 0%, 16%));
+padding: 8px 0;
+font-size: 16px;
+}
+
